@@ -19,4 +19,11 @@ public class TrackCoach implements Coach {
     }
 
     /*Add an init method and destroy method*/
+    public void initMethod(){
+        System.out.println("Inside in-it method");
+    }
+
+    public void destroyMethod(){
+        System.out.println("Inside destroy method");
+    }
 }
