@@ -14,7 +14,8 @@
     <bean id="myCoach"
           class="com.TrackCoach"
           init-method="initMethod"
-          destroy-method="destroyMethod">
+          destroy-method="destroyMethod"
+          scope="prototype">
         <constructor-arg ref="myFortune"/>
     </bean>
 
