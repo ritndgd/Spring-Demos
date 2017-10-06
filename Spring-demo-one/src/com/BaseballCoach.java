@@ -11,8 +11,8 @@ public class BaseballCoach implements Coach{
     private FortuneService fortuneService;
 
     /*Constructor for dependency injection*/
-    public BaseballCoach(FortuneService theFortineService){
-        fortuneService = theFortineService;
+    public BaseballCoach(FortuneService fortuneService){
+        this.fortuneService = fortuneService;
     }
 
     @Override
