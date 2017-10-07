@@ -2,7 +2,7 @@ package com;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class AnnotationDemoApp {
+public class JavaConfigDemoApp {
 
     public static void main(String[] args) {
 
