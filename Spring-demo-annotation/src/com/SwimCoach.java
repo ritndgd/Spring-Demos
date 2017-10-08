@@ -1,5 +1,8 @@
 package com;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SwimCoach implements Coach {
 
     private FortuneService fortuneService;

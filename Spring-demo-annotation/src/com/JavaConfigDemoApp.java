@@ -9,10 +9,14 @@ public class JavaConfigDemoApp {
         /*Load the Spring container*/
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
 
-        Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
+        Coach coach = context.getBean("swimCoach", Coach.class);
+        Coach alphaCoach = context.getBean("tennisCoach", Coach.class);
 
-        System.out.println(tennisCoach.getDailyWorkout());
-        System.out.println(tennisCoach.getDailyFortune());
+        System.out.println(alphaCoach.getDailyFortune());
+        System.out.println(alphaCoach.getDailyWorkout());
+
+        System.out.println(coach.getDailyWorkout());
+        System.out.println(coach.getDailyFortune());
 
         /*Close the context*/
         context.close();

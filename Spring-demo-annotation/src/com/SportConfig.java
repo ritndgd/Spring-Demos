@@ -10,14 +10,14 @@ public class SportConfig {
 
     @Bean
     public FortuneService sadFortuneService(){
-        SadFortuneService sadFortuneService = new SadFortuneService();
-        return sadFortuneService;
+         return new SadFortuneService();
     }
 
     @Bean
     public Coach swimCoach(){
-        SwimCoach swimCoach = new SwimCoach(sadFortuneService());
-        return swimCoach;
+        return new SwimCoach(sadFortuneService());
     }
+
+
 
 }
