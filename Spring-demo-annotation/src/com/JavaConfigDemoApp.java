@@ -9,12 +9,9 @@ public class JavaConfigDemoApp {
         /*Load the Spring container*/
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
 
-        Coach coach = context.getBean("swimCoach", Coach.class);
-        Coach alphaCoach = context.getBean("tennisCoach", Coach.class);
+        SwimCoach coach = context.getBean("swimCoach", SwimCoach.class);
 
-        System.out.println(alphaCoach.getDailyFortune());
-        System.out.println(alphaCoach.getDailyWorkout());
-
+        System.out.println(coach.);
         System.out.println(coach.getDailyWorkout());
         System.out.println(coach.getDailyFortune());
 
